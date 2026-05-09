@@ -1,0 +1,22 @@
+.disclaimer {
+  margin: 2rem 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.body :global(p:last-child) {
+  margin-bottom: 0;
+}

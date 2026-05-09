@@ -1,0 +1,81 @@
+.callout {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-card-border-radius);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background, #fff);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.content :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+/* Variants */
+.info {
+  border-left-color: var(--psx-blue);
+  background: color-mix(in srgb, var(--psx-blue) 8%, var(--ifm-background-color));
+}
+.info .icon {
+  background: var(--psx-blue);
+}
+
+.tip {
+  border-left-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-background-color));
+}
+.tip .icon {
+  background: var(--ifm-color-primary);
+}
+
+.warning {
+  border-left-color: var(--psx-gold);
+  background: color-mix(in srgb, var(--psx-gold) 12%, var(--ifm-background-color));
+}
+.warning .icon {
+  background: var(--psx-gold);
+  color: #1a1a1a;
+}
+
+.danger {
+  border-left-color: var(--psx-red);
+  background: color-mix(in srgb, var(--psx-red) 8%, var(--ifm-background-color));
+}
+.danger .icon {
+  background: var(--psx-red);
+}
+
+.note {
+  border-left-color: var(--ifm-color-emphasis-500);
+  background: var(--ifm-color-emphasis-100);
+}
+.note .icon {
+  background: var(--ifm-color-emphasis-700);
+}
