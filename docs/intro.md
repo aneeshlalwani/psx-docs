@@ -1,7 +1,7 @@
 ---
 id: "intro"
 title: "Welcome"
-sidebar_position: 1
+sidebar_position: 0
 description: "Start your journey to learning about investing on the Pakistan Stock Exchange (PSX)."
 slug: "/intro"
 ---
