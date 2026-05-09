@@ -1,0 +1,92 @@
+/**
+ * Global CSS — uses the actual PSX brand palette extracted from psx.com.pk.
+ * Infima variables override the Docusaurus defaults.
+ */
+
+:root {
+  /* PSX brand greens — primary accent */
+  --psx-green: #5ab946;
+  --psx-green-dark: #56ae45;
+  --psx-green-darkest: #3c763d;
+  --psx-green-light: #78b82a;
+  --psx-green-lightest: #dff0d8;
+
+  /* PSX secondary accents */
+  --psx-blue: #337ab7;
+  --psx-gold: #d1a851;
+  --psx-red: #a94442;
+
+  /* Neutrals */
+  --psx-ink: #262626;
+  --psx-ink-soft: #333333;
+  --psx-muted: #555555;
+  --psx-muted-soft: #777777;
+  --psx-line: #ebebeb;
+  --psx-surface: #fcfcfc;
+  --psx-surface-alt: #efefef;
+
+  /* Infima primary — mapped to PSX green */
+  --ifm-color-primary: #5ab946;
+  --ifm-color-primary-dark: #46a834;
+  --ifm-color-primary-darker: #429f31;
+  --ifm-color-primary-darkest: #3c763d;
+  --ifm-color-primary-light: #6cc25a;
+  --ifm-color-primary-lighter: #78c768;
+  --ifm-color-primary-lightest: #95d489;
+
+  /* Typography & layout polish */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-code-font-size: 92%;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 0 0 var(--psx-line);
+  --ifm-footer-background-color: #ffffff;
+  --ifm-footer-color: var(--psx-muted);
+  --ifm-footer-link-color: var(--psx-muted);
+  --ifm-toc-border-color: var(--psx-line);
+  --ifm-hr-border-color: var(--psx-line);
+  --ifm-card-border-radius: 8px;
+  --docusaurus-highlighted-code-line-bg: rgba(120, 184, 42, 0.12);
+}
+
+/* Dark mode — lighten the green so contrast stays readable. */
+[data-theme='dark'] {
+  --psx-line: #2a2a2a;
+  --psx-surface: #1b1b1b;
+  --psx-surface-alt: #232323;
+
+  --ifm-color-primary: #78b82a;
+  --ifm-color-primary-dark: #6caa1f;
+  --ifm-color-primary-darker: #66a01d;
+  --ifm-color-primary-darkest: #548418;
+  --ifm-color-primary-light: #8cc342;
+  --ifm-color-primary-lighter: #98c953;
+  --ifm-color-primary-lightest: #b3d780;
+
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1b1b1b;
+  --ifm-navbar-background-color: #1b1b1b;
+  --ifm-navbar-shadow: 0 1px 0 0 #2a2a2a;
+  --ifm-footer-background-color: #1b1b1b;
+  --ifm-toc-border-color: #2a2a2a;
+  --ifm-hr-border-color: #2a2a2a;
+  --docusaurus-highlighted-code-line-bg: rgba(120, 184, 42, 0.18);
+}
+
+/* Tighten the docs reading column for comfortable line length. */
+.markdown {
+  --ifm-h1-font-size: 2.25rem;
+  --ifm-h2-font-size: 1.625rem;
+  --ifm-h3-font-size: 1.25rem;
+}
+
+.markdown > h2 {
+  margin-top: 2.5rem;
+}
+
+/* Subtle navbar branding accent */
+.navbar__brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
