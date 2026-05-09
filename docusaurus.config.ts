@@ -135,7 +135,7 @@ const config: Config = {
           title: 'Learn',
           items: [
             {label: 'Introduction', to: '/docs/intro'},
-            {label: 'Getting Started', to: '/docs/category/getting-started'},
+            {label: 'Investing 101', to: '/docs/category/investing-101'},
             {label: 'Pakistan Stock Market', to: '/docs/category/pakistan-stock-market'},
           ],
         },
