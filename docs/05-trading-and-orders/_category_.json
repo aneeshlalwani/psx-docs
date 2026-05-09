@@ -1,0 +1,8 @@
+{
+  "label": "Trading & Orders",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Order types, trading hours, and settlement on PSX."
+  }
+}
