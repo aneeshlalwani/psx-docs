@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import content from '@site/src/content/landing/glossary-teaser.json';
 
 const BookmarkIcon = (): ReactNode => (
   <svg
@@ -30,20 +31,18 @@ export default function GlossaryTeaser(): ReactNode {
 
           <div className="flex-1 text-center md:text-left">
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-[var(--ifm-heading-color)] md:text-3xl">
-              Stuck on a term?
+              {content.heading}
             </h2>
             <p className="text-base leading-relaxed text-[var(--ifm-color-emphasis-700)]">
-              Every technical word across the site links to a glossary entry.
-              Bookmark it for the next time you hit a term you do not
-              recognise.
+              {content.body}
             </p>
           </div>
 
           <Link
-            to="/docs/category/glossary"
+            to={content.cta.to}
             className="inline-flex h-12 shrink-0 items-center justify-center rounded-md bg-psx-green px-7 text-base font-semibold text-white no-underline shadow-sm transition hover:bg-psx-green-dark hover:text-white hover:no-underline"
           >
-            Open the glossary →
+            {content.cta.label}
           </Link>
         </div>
       </div>
