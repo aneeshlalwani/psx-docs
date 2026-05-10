@@ -1,0 +1,40 @@
+{
+  "tagline": "Free investor education for the Pakistan Stock Exchange. No affiliations, no commissions, no advice. Just a structured path to understanding the market.",
+  "github": {
+    "label": "View on GitHub",
+    "href": "https://github.com/psx-learn/psx-docs"
+  },
+  "linkGroups": [
+    {
+      "title": "Learn",
+      "items": [
+        {"label": "Introduction", "to": "/docs/intro"},
+        {"label": "Personal Finance", "to": "/docs/category/personal-finance"},
+        {"label": "Investing 101", "to": "/docs/category/investing-101"},
+        {"label": "Investment Basics", "to": "/docs/category/investment-basics"}
+      ]
+    },
+    {
+      "title": "Pakistan Stock Exchange",
+      "items": [
+        {"label": "Pakistan Stock Market", "to": "/docs/category/pakistan-stock-market"},
+        {"label": "Getting Started", "to": "/docs/category/getting-started-with-psx"},
+        {"label": "Trading & Orders", "to": "/docs/category/trading--orders"},
+        {"label": "Corporate Actions", "to": "/docs/category/corporate-actions"}
+      ]
+    },
+    {
+      "title": "Reference",
+      "items": [
+        {"label": "Fundamental Analysis", "to": "/docs/category/fundamental-analysis"},
+        {"label": "Taxes & Zakat", "to": "/docs/category/taxes--zakat"},
+        {"label": "Shariah Investing", "to": "/docs/category/shariah-investing"},
+        {"label": "Glossary", "to": "/docs/category/glossary"}
+      ]
+    }
+  ],
+  "legal": {
+    "rightsReserved": "All rights reserved.",
+    "disclaimer": "Educational content only. Not financial advice."
+  }
+}
