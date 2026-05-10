@@ -109,7 +109,7 @@ Run through every item, every review.
 ### C. Tone and language
 
 1. Average sentence length is short (rough heuristic: most sentences ≤ 25 words).
-2. Jargon is defined on first use — every acronym (CDC, NCCPL, SECP, FBR, T+2, KMI-30) introduced inline.
+2. Jargon is defined on first use — every acronym (CDC, NCCPL, SECP, FBR, T+1, KMI-30) introduced inline.
 3. Money examples use PKR, not USD or generic "$".
 4. Pakistani-context where the topic invites it — flag generic American-style examples.
 5. No buy/sell advice. Phrases like "you should buy", "this is a good investment", "this stock will rise" are red flags.
@@ -138,7 +138,7 @@ Run through every item, every review.
 ### G. Category-specific extras
 
 - **`docs/00-personal-finance/*`** — Flag any specific PKR amount or interest rate stated as fact (e.g., savings-account rates, inflation rates) that should be a TODO.
-- **`docs/06-corporate-actions/*`** — Ensure book-closure / T+2 timing is correctly described where it matters.
+- **`docs/06-corporate-actions/*`** — Ensure book-closure / T+1 timing is correctly described where it matters. PSX moved to T+1 settlement on 9 February 2026; older sources may still say T+2.
 - **`docs/07-fundamental-analysis/*`** — Flag any specific company financials or ratios stated as current (e.g., "ABC Ltd's P/E is 12") — they go stale fast and should be illustrative only or marked TODO.
 - **`docs/08-technical-analysis/*`** — Flag predictive claims about specific securities. Technical analysis content should describe patterns and indicators, never prescribe trades.
 - **`docs/09-taxes-and-zakat/*`** — `<Disclaimer />` is mandatory. Flag any specific PKR-amount example that looks like advice. Ensure both filer and non-filer context is at least mentioned where relevant.
@@ -186,8 +186,8 @@ this is ready to publish.
 
 ## Editorial issues
 
-- **L8** "T+2" used without definition. Define on first use, e.g.,
-  "T+2 (the trade settles two business days after the trade date)".
+- **L8** "T+1" used without definition. Define on first use, e.g.,
+  "T+1 (the trade settles one business day after the trade date)".
 - **L19** Sentence length: "When a Pakistani company that you own
   shares in declares a profit and decides to share that profit with
   shareholders, the way it does that is called a dividend." — 32
@@ -210,7 +210,7 @@ this is ready to publish.
 - [x] Worked example present
 - [x] "Key takeaways" present
 - [x] PKR amounts used
-- [ ] Jargon defined on first use (T+2 at L8)
+- [ ] Jargon defined on first use (T+1 at L8)
 - [x] No buy/sell advice
 - [ ] All internal links resolve (broken at L42)
 - [x] `<Disclaimer />` present (required for this category)

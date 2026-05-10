@@ -57,7 +57,7 @@ Pages live at `docs/<NN-category>/<slug>.md` where `NN-category` is one of:
 | `02-investment-basics`        | Stocks, bonds, mutual funds, ETFs, equity vs. debt            |
 | `03-pakistan-stock-market`    | PSX overview, indices (KSE-100, KSE-30, KMI-30), participants |
 | `04-getting-started-with-psx` | Account opening, CDC, brokers, first trade                    |
-| `05-trading-and-orders`       | Order types, trading hours, settlement (T+2), circuit breakers |
+| `05-trading-and-orders`       | Order types, trading hours, settlement (T+1), circuit breakers |
 | `06-corporate-actions`        | Dividends, bonus shares, stock splits, rights issues, book closure |
 | `07-fundamental-analysis`     | Financial statements, ratios, intrinsic value (24 pages)      |
 | `08-technical-analysis`       | Charts, candlesticks, indicators                              |

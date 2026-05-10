@@ -74,7 +74,7 @@ When you produce a curriculum (Format C) or a track (Format B), every page in it
 
 For any page X, ask:
 
-1. **What jargon does X use that the reader needs to already know?** Each piece of unfamiliar jargon points to a prerequisite page (or a glossary entry). For example, the dividends page uses "T+2 settlement" and "book closure" — the dividends page therefore depends on `05-trading-and-orders/settlement` and the book-closure page.
+1. **What jargon does X use that the reader needs to already know?** Each piece of unfamiliar jargon points to a prerequisite page (or a glossary entry). For example, the dividends page uses "T+1 settlement" and "book closure" — the dividends page therefore depends on `05-trading-and-orders/settlement` and the book-closure page.
 2. **What concept does X build on?** ETFs build on mutual funds and stocks. The first-trade page builds on order types. Capital gains tax builds on a basic understanding of buying and selling.
 3. **What knowledge from outside the docs is assumed?** PKR, basic arithmetic, "you have a bank account" — flag these only if they're load-bearing for that specific page.
 

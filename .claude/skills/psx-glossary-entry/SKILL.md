@@ -49,7 +49,7 @@ Why the format is strict: the glossary is a reference document. A reader scannin
 **Heading (`###`)**
 - Level-3 heading (`###`), one term per heading. This is what produces the page anchor.
 - Sentence case for ordinary terms: `### Bull market`, `### Book closure`.
-- Preserve uppercase for acronyms and proper nouns: `### CDC`, `### KSE-100`, `### KMI-30`, `### NCCPL`, `### SECP`, `### T+2 settlement`.
+- Preserve uppercase for acronyms and proper nouns: `### CDC`, `### KSE-100`, `### KMI-30`, `### NCCPL`, `### SECP`, `### T+1 settlement`.
 - For an acronym whose expansion is itself the term, prefer the form readers will look up. Use `### CDC` (with the expansion in the body) rather than `### Central Depository Company`.
 
 **Definition (1-3 sentences)**
@@ -76,7 +76,7 @@ Why the format is strict: the glossary is a reference document. A reader scannin
 Entries are sorted **alphabetically by the heading text**, ignoring case and ignoring leading non-letter characters.
 
 - `### KMI-30` sorts under K.
-- `### T+2 settlement` sorts under T.
+- `### T+1 settlement` sorts under T.
 - `### "Filer" status` sorts under F (the leading quote is ignored).
 
 When inserting a new term, find the correct alphabetical position and place the entry there. Do **not** append to the end of the file unless the term is alphabetically last.
@@ -99,7 +99,7 @@ Use these conventions when they apply — they make the glossary feel local inst
 |---|---|
 | Tax rates | Note filer vs. non-filer differential exists; mark the actual rate as TODO |
 | Zakat | Reference the lunar-year nisab; mark the current PKR value as TODO |
-| Settlement | T+2 cycle on PSX, NCCPL is the clearing house |
+| Settlement | T+1 cycle on PSX (effective 9 February 2026; previously T+2). NCCPL is the clearing house. |
 | Custody | CDC (Central Depository Company) holds shares electronically |
 | Regulator | SECP (Securities and Exchange Commission of Pakistan) |
 | Indices | KSE-100, KSE-30, KMI-30 (Shariah), KMI All-Share |
@@ -116,14 +116,14 @@ Output added in the correct alphabetical slot:
 
 The date a company sets to identify which shareholders are eligible to
 receive an upcoming dividend, bonus, or rights issue. If you do not own
-the share before this date (accounting for T+2 settlement), you do not
+the share before this date (accounting for T+1 settlement), you do not
 qualify.
 
 **Example:** XYZ Ltd. announces a PKR 4 per-share cash dividend with a
 book closure date of 15 March. To receive the dividend you must have
-bought the share at least two trading days earlier.
+bought the share at least one trading day earlier.
 
-**See also:** [Dividend](#dividend) · [T+2 settlement](#t2-settlement) · [Book closure on the corporate actions page](/docs/06-corporate-actions/book-closure)
+**See also:** [Dividend](#dividend) · [T+1 settlement](#t1-settlement) · [Book closure on the corporate actions page](/docs/06-corporate-actions/book-closure)
 ```
 
 ## What to do step by step
