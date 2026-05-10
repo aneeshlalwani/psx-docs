@@ -8,6 +8,7 @@ import TopicGrid from '@site/src/components/landing/TopicGrid';
 import ValueProps from '@site/src/components/landing/ValueProps';
 import FeaturedPages from '@site/src/components/landing/FeaturedPages';
 import GlossaryTeaser from '@site/src/components/landing/GlossaryTeaser';
+import FinalCTA from '@site/src/components/landing/FinalCTA';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -19,6 +20,7 @@ export default function Home(): ReactNode {
       <ValueProps />
       <FeaturedPages />
       <GlossaryTeaser />
+      <FinalCTA />
     </Layout>
   );
 }
