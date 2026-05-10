@@ -1,14 +1,8 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import content from '@site/src/content/landing/learning-tracks.json';
 
-type Track = {
-  title: string;
-  description: string;
-  meta: string;
-  href: string;
-  cta: string;
-  Icon: () => ReactNode;
-};
+type IconName = 'AcademicCap' | 'TrendingUp' | 'ShieldCheck';
 
 const AcademicCapIcon = (): ReactNode => (
   <svg
@@ -64,38 +58,16 @@ const ShieldCheckIcon = (): ReactNode => (
   </svg>
 );
 
-const tracks: Track[] = [
-  {
-    title: 'Complete beginner',
-    description:
-      'Never invested before. Start with budgeting and saving, then build up step by step until you can confidently buy your first PSX stock.',
-    meta: 'Full curriculum · 82 pages',
-    href: '/docs/intro',
-    cta: 'Start from the basics',
-    Icon: AcademicCapIcon,
-  },
-  {
-    title: 'Already invest, new to PSX',
-    description:
-      'Skip the foundations. Jump straight to how PSX works, opening a CDC account, placing your first trade, and the Pakistan-specific tax rules.',
-    meta: 'PSX fast track · ~27 pages',
-    href: '/docs/category/pakistan-stock-market',
-    cta: 'Jump into PSX',
-    Icon: TrendingUpIcon,
-  },
-  {
-    title: 'Shariah-only investor',
-    description:
-      'Stay within KMI-30 territory. Learn Shariah screening, purification of non-compliant income, and how to identify compliant PSX stocks.',
-    meta: 'Focused track · 4 pages',
-    href: '/docs/category/shariah-investing',
-    cta: 'Start Shariah track',
-    Icon: ShieldCheckIcon,
-  },
-];
+const iconRegistry: Record<IconName, () => ReactNode> = {
+  AcademicCap: AcademicCapIcon,
+  TrendingUp: TrendingUpIcon,
+  ShieldCheck: ShieldCheckIcon,
+};
+
+type Track = (typeof content.tracks)[number];
 
 function TrackCard({track}: {track: Track}): ReactNode {
-  const {Icon} = track;
+  const Icon = iconRegistry[track.icon as IconName];
   return (
     <Link
       to={track.href}
@@ -127,16 +99,15 @@ export default function LearningTracks(): ReactNode {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-[var(--ifm-heading-color)] md:text-4xl">
-            Where do I start?
+            {content.heading}
           </h2>
           <p className="text-lg text-[var(--ifm-color-emphasis-700)]">
-            Pick the path that matches your situation. You can switch tracks
-            any time.
+            {content.subhead}
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {tracks.map((track) => (
+          {content.tracks.map((track) => (
             <TrackCard key={track.title} track={track} />
           ))}
         </div>

@@ -1,0 +1,30 @@
+{
+  "heading": "Where do I start?",
+  "subhead": "Pick the path that matches your situation. You can switch tracks any time.",
+  "tracks": [
+    {
+      "icon": "AcademicCap",
+      "title": "Complete beginner",
+      "description": "Never invested before. Start with budgeting and saving, then build up step by step until you can confidently buy your first PSX stock.",
+      "meta": "Full curriculum · 82 pages",
+      "href": "/docs/intro",
+      "cta": "Start from the basics"
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Already invest, new to PSX",
+      "description": "Skip the foundations. Jump straight to how PSX works, opening a CDC account, placing your first trade, and the Pakistan-specific tax rules.",
+      "meta": "PSX fast track · ~27 pages",
+      "href": "/docs/category/pakistan-stock-market",
+      "cta": "Jump into PSX"
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Shariah-only investor",
+      "description": "Stay within KMI-30 territory. Learn Shariah screening, purification of non-compliant income, and how to identify compliant PSX stocks.",
+      "meta": "Focused track · 4 pages",
+      "href": "/docs/category/shariah-investing",
+      "cta": "Start Shariah track"
+    }
+  ]
+}
