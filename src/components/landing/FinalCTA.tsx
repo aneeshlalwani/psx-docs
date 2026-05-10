@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import content from '@site/src/content/landing/final-cta.json';
 
 export default function FinalCTA(): ReactNode {
   return (
@@ -13,31 +14,29 @@ export default function FinalCTA(): ReactNode {
 
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-[var(--ifm-heading-color)] md:text-5xl">
-          Ready to start?
+          {content.heading}
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-lg text-[var(--ifm-color-emphasis-700)]">
-          The intro takes about ten minutes. The full beginner track is a few
-          weeks of evening reading. Either way, you will be better prepared
-          than most people opening their first PSX account.
+          {content.subhead}
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
-            to="/docs/intro"
+            to={content.primaryCta.to}
             className="inline-flex h-12 items-center justify-center rounded-md bg-psx-green px-7 text-base font-semibold text-white no-underline shadow-sm transition hover:bg-psx-green-dark hover:text-white hover:no-underline"
           >
-            Start with the basics
+            {content.primaryCta.label}
           </Link>
           <Link
-            to="/docs/intro#what-you-will-find-here"
+            to={content.secondaryCta.to}
             className="inline-flex h-12 items-center justify-center rounded-md border border-[var(--ifm-color-emphasis-300)] bg-transparent px-6 text-base font-semibold text-[var(--ifm-color-emphasis-900)] no-underline transition hover:border-psx-green hover:text-psx-green hover:no-underline"
           >
-            Browse all topics →
+            {content.secondaryCta.label}
           </Link>
         </div>
 
         <p className="mt-10 text-sm text-[var(--ifm-color-emphasis-600)]">
-          Educational content only. Not financial advice.
+          {content.disclaimer}
         </p>
       </div>
     </section>

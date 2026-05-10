@@ -1,0 +1,13 @@
+{
+  "heading": "Ready to start?",
+  "subhead": "The intro takes about ten minutes. The full beginner track is a few weeks of evening reading. Either way, you will be better prepared than most people opening their first PSX account.",
+  "primaryCta": {
+    "label": "Start with the basics",
+    "to": "/docs/intro"
+  },
+  "secondaryCta": {
+    "label": "Browse all topics →",
+    "to": "/docs/intro#what-you-will-find-here"
+  },
+  "disclaimer": "Educational content only. Not financial advice."
+}
