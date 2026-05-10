@@ -1,40 +1,8 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import content from '@site/src/content/landing/featured-pages.json';
 
-type Featured = {
-  category: string;
-  title: string;
-  excerpt: string;
-  href: string;
-  readTime: string;
-};
-
-const featured: Featured[] = [
-  {
-    category: 'Personal Finance',
-    title: 'The Power of Compounding',
-    excerpt:
-      'The single idea that does most of the heavy lifting in personal finance. Small consistent savings, given enough time, can become surprisingly large sums.',
-    href: '/docs/personal-finance/power-of-compounding',
-    readTime: '8 min read',
-  },
-  {
-    category: 'Investing 101',
-    title: 'Why Invest?',
-    excerpt:
-      'Two Pakistanis with the same salary. One keeps savings in a bank, the other invests on PSX. After twenty years, in real terms, their wealth gap is enormous.',
-    href: '/docs/investing-101/why-invest',
-    readTime: '6 min read',
-  },
-  {
-    category: 'Investing 101',
-    title: 'Risk and Return',
-    excerpt:
-      'Higher returns require higher risk. There is no investment that delivers high returns with no risk. Once you understand this, half the dubious schemes become easy to spot.',
-    href: '/docs/investing-101/risk-and-return',
-    readTime: '7 min read',
-  },
-];
+type Featured = (typeof content.items)[number];
 
 function FeaturedCard({item}: {item: Featured}): ReactNode {
   return (
@@ -70,16 +38,15 @@ export default function FeaturedPages(): ReactNode {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-[var(--ifm-heading-color)] md:text-4xl">
-            Hand-picked starting points
+            {content.heading}
           </h2>
           <p className="text-lg text-[var(--ifm-color-emphasis-700)]">
-            Three pages worth reading even if you read nothing else on the
-            site.
+            {content.subhead}
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {featured.map((item) => (
+          {content.items.map((item) => (
             <FeaturedCard key={item.href} item={item} />
           ))}
         </div>

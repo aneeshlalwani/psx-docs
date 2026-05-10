@@ -1,0 +1,27 @@
+{
+  "heading": "Hand-picked starting points",
+  "subhead": "Three pages worth reading even if you read nothing else on the site.",
+  "items": [
+    {
+      "category": "Personal Finance",
+      "title": "The Power of Compounding",
+      "excerpt": "The single idea that does most of the heavy lifting in personal finance. Small consistent savings, given enough time, can become surprisingly large sums.",
+      "href": "/docs/personal-finance/power-of-compounding",
+      "readTime": "8 min read"
+    },
+    {
+      "category": "Investing 101",
+      "title": "Why Invest?",
+      "excerpt": "Two Pakistanis with the same salary. One keeps savings in a bank, the other invests on PSX. After twenty years, in real terms, their wealth gap is enormous.",
+      "href": "/docs/investing-101/why-invest",
+      "readTime": "6 min read"
+    },
+    {
+      "category": "Investing 101",
+      "title": "Risk and Return",
+      "excerpt": "Higher returns require higher risk. There is no investment that delivers high returns with no risk. Once you understand this, half the dubious schemes become easy to spot.",
+      "href": "/docs/investing-101/risk-and-return",
+      "readTime": "7 min read"
+    }
+  ]
+}
