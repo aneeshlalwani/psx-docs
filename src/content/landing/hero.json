@@ -1,0 +1,17 @@
+{
+  "eyebrow": "Free Investor Education · Pakistan Stock Exchange",
+  "headline": {
+    "lineOne": "Stop guessing.",
+    "accent": "Start understanding",
+    "trail": " the PSX."
+  },
+  "subhead": "A structured, beginner-friendly path through stocks, mutual funds, ETFs, taxes, zakat, and Shariah investing in Pakistan. Read at your own pace.",
+  "primaryCta": {
+    "label": "Start with the basics",
+    "to": "/docs/intro"
+  },
+  "secondaryCta": {
+    "label": "Browse all topics →",
+    "to": "/docs/intro#what-you-will-find-here"
+  }
+}
