@@ -7,6 +7,7 @@ import LearningTracks from '@site/src/components/landing/LearningTracks';
 import TopicGrid from '@site/src/components/landing/TopicGrid';
 import ValueProps from '@site/src/components/landing/ValueProps';
 import FeaturedPages from '@site/src/components/landing/FeaturedPages';
+import GlossaryTeaser from '@site/src/components/landing/GlossaryTeaser';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -17,6 +18,7 @@ export default function Home(): ReactNode {
       <TopicGrid />
       <ValueProps />
       <FeaturedPages />
+      <GlossaryTeaser />
     </Layout>
   );
 }
