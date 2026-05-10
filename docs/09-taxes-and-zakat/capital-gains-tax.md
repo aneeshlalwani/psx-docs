@@ -1,7 +1,7 @@
 ---
 id: "capital-gains-tax"
 title: "Capital Gains Tax"
-sidebar_position: 1
+sidebar_position: 2
 description: "How capital gains tax (CGT) on PSX trades works in Pakistan."
 ---
 
