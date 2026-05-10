@@ -1,7 +1,7 @@
 ---
 id: "rights-issues"
 title: "Rights Issues"
-sidebar_position: 3
+sidebar_position: 4
 description: "Rights offerings — buying additional shares from companies you already own."
 ---
 

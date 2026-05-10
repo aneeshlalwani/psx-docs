@@ -1,7 +1,7 @@
 ---
 id: "market-participants"
 title: "Market Participants"
-sidebar_position: 4
+sidebar_position: 5
 description: "Brokers, investors, regulators, and the intermediaries that make PSX function."
 ---
 

@@ -36,13 +36,13 @@ The dev server runs on http://localhost:3000 with hot reload.
 ├── docs/                          # All documentation content (MDX/MD)
 │   ├── intro.md                   # Landing intro
 │   ├── 00-personal-finance/       # Budgeting, saving, compounding, TVM
-│   ├── 01-investing-101/          # Investing fundamentals: what / why / risk
-│   ├── 02-investment-basics/      # Stocks, bonds, mutual funds, ETFs
-│   ├── 03-pakistan-stock-market/  # PSX overview, indices, participants
-│   ├── 04-getting-started-with-psx/ # Account opening, brokers, first trade
-│   ├── 05-trading-and-orders/     # Order types, hours, settlement
-│   ├── 06-corporate-actions/      # Dividends, bonus, rights, book closure
-│   ├── 07-fundamental-analysis/   # Financial statements, ratios, intrinsic value
+│   ├── 01-investing-101/          # Fundamentals: investing, risk, diversification, psychology
+│   ├── 02-investment-basics/      # Equity vs debt, share types, stocks, bonds, mutual funds, ETFs, strategies
+│   ├── 03-pakistan-stock-market/  # PSX, indices, participants, regulations, prices, indicators
+│   ├── 04-getting-started-with-psx/ # Account, broker, CDC, first trade, portfolio manager
+│   ├── 05-trading-and-orders/     # Order types, hours, settlement, circuit breakers
+│   ├── 06-corporate-actions/      # Dividends, bonus, splits, rights, book closure
+│   ├── 07-fundamental-analysis/   # FA framework, statements, ratios, valuation (~24 pages)
 │   ├── 08-technical-analysis/     # Charts, candlesticks, indicators
 │   ├── 09-taxes-and-zakat/        # CGT, dividend tax, zakat
 │   ├── 10-shariah-investing/      # KMI-30, screening, purification

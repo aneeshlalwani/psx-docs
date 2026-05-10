@@ -1,7 +1,7 @@
 ---
 id: "comparative-and-trend-analysis"
 title: "Comparative and Trend Analysis"
-sidebar_position: 7
+sidebar_position: 24
 description: "Reading a company's financial performance across periods and against its industry peers."
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: "book-closure"
 title: "Book Closure"
-sidebar_position: 4
+sidebar_position: 5
 description: "Book closure dates and how they affect dividend and bonus eligibility."
 ---
 
