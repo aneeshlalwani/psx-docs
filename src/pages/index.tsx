@@ -6,6 +6,7 @@ import Hero from '@site/src/components/landing/Hero';
 import LearningTracks from '@site/src/components/landing/LearningTracks';
 import TopicGrid from '@site/src/components/landing/TopicGrid';
 import ValueProps from '@site/src/components/landing/ValueProps';
+import FeaturedPages from '@site/src/components/landing/FeaturedPages';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -15,6 +16,7 @@ export default function Home(): ReactNode {
       <LearningTracks />
       <TopicGrid />
       <ValueProps />
+      <FeaturedPages />
     </Layout>
   );
 }
