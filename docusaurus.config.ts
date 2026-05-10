@@ -141,34 +141,6 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      style: 'light',
-      links: [
-        {
-          title: 'Learn',
-          items: [
-            {label: 'Introduction', to: '/docs/intro'},
-            {label: 'Investing 101', to: '/docs/category/investing-101'},
-            {label: 'Pakistan Stock Market', to: '/docs/category/pakistan-stock-market'},
-          ],
-        },
-        {
-          title: 'Topics',
-          items: [
-            {label: 'Trading & Orders', to: '/docs/category/trading--orders'},
-            {label: 'Taxes & Zakat', to: '/docs/category/taxes--zakat'},
-            {label: 'Shariah Investing', to: '/docs/category/shariah-investing'},
-          ],
-        },
-        {
-          title: 'About',
-          items: [
-            {label: 'Glossary', to: '/docs/category/glossary'},
-          ],
-        },
-      ],
-      copyright: `© ${new Date().getFullYear()} ${SITE_NAME}. Educational content only — not financial advice.`,
-    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
