@@ -1,7 +1,7 @@
 ---
 id: "mutual-funds"
 title: "Mutual Funds"
-sidebar_position: 3
+sidebar_position: 5
 description: "Pooled investment vehicles managed by professionals — how they work in Pakistan."
 ---
 
