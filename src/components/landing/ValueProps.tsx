@@ -1,10 +1,7 @@
 import type {ReactNode} from 'react';
+import content from '@site/src/content/landing/value-props.json';
 
-type Prop = {
-  title: string;
-  description: string;
-  Icon: () => ReactNode;
-};
+type IconName = 'MapPin' | 'BookOpen' | 'Scale' | 'Link';
 
 const MapPinIcon = (): ReactNode => (
   <svg
@@ -83,35 +80,17 @@ const LinkIcon = (): ReactNode => (
   </svg>
 );
 
-const props: Prop[] = [
-  {
-    title: 'Pakistani context',
-    description:
-      'Every example uses PKR, FBR rules, KMI-30, and the brokers you can actually use in Pakistan. Not American or Indian playbooks.',
-    Icon: MapPinIcon,
-  },
-  {
-    title: 'Plain English',
-    description:
-      'No jargon for jargon’s sake. Every technical term links to a glossary entry written for first-time investors.',
-    Icon: BookOpenIcon,
-  },
-  {
-    title: 'Independent',
-    description:
-      'No broker affiliations, no referral commissions, no paid placements. We do not earn a rupee when you open an account.',
-    Icon: ScaleIcon,
-  },
-  {
-    title: 'Always cited',
-    description:
-      'Every claim about prices, rules, or returns links to PSX, SECP, FBR, NCCPL, or another source you can verify yourself.',
-    Icon: LinkIcon,
-  },
-];
+const iconRegistry: Record<IconName, () => ReactNode> = {
+  MapPin: MapPinIcon,
+  BookOpen: BookOpenIcon,
+  Scale: ScaleIcon,
+  Link: LinkIcon,
+};
+
+type Prop = (typeof content.props)[number];
 
 function PropCard({prop}: {prop: Prop}): ReactNode {
-  const {Icon} = prop;
+  const Icon = iconRegistry[prop.icon as IconName];
   return (
     <div className="flex flex-col">
       <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-psx-green/10 text-psx-green-darkest dark:text-psx-green-light">
@@ -133,16 +112,15 @@ export default function ValueProps(): ReactNode {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-[var(--ifm-heading-color)] md:text-4xl">
-            Built for Pakistani investors
+            {content.heading}
           </h2>
           <p className="text-lg text-[var(--ifm-color-emphasis-700)]">
-            Local context, plain English, and no commissions hiding in the
-            margins.
+            {content.subhead}
           </p>
         </div>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {props.map((prop) => (
+          {content.props.map((prop) => (
             <PropCard key={prop.title} prop={prop} />
           ))}
         </div>

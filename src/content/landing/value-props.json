@@ -1,0 +1,26 @@
+{
+  "heading": "Built for Pakistani investors",
+  "subhead": "Local context, plain English, and no commissions hiding in the margins.",
+  "props": [
+    {
+      "icon": "MapPin",
+      "title": "Pakistani context",
+      "description": "Every example uses PKR, FBR rules, KMI-30, and the brokers you can actually use in Pakistan. Not American or Indian playbooks."
+    },
+    {
+      "icon": "BookOpen",
+      "title": "Plain English",
+      "description": "No jargon for jargon's sake. Every technical term links to a glossary entry written for first-time investors."
+    },
+    {
+      "icon": "Scale",
+      "title": "Independent",
+      "description": "No broker affiliations, no referral commissions, no paid placements. We do not earn a rupee when you open an account."
+    },
+    {
+      "icon": "Link",
+      "title": "Always cited",
+      "description": "Every claim about prices, rules, or returns links to PSX, SECP, FBR, NCCPL, or another source you can verify yourself."
+    }
+  ]
+}
