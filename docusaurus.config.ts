@@ -57,6 +57,19 @@ const config: Config = {
     },
   ],
 
+  plugins: [
+    function tailwindPlugin() {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -70,7 +83,7 @@ const config: Config = {
         // Blog disabled for v1 — re-enable by changing `false` to a config object.
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/tailwind.css'],
         },
         sitemap: {
           changefreq: 'weekly',
