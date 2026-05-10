@@ -1,7 +1,7 @@
 ---
 id: "intrinsic-value-vs-market-price"
 title: "Intrinsic Value vs. Market Price"
-sidebar_position: 8
+sidebar_position: 23
 description: "The investment rule: buy when intrinsic value is above market price, sell when it's below."
 ---
 
