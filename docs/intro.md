@@ -1,18 +1,16 @@
 ---
-id: "intro"
-title: "Welcome"
+id: 'intro'
+title: 'Welcome'
 sidebar_position: 0
-description: "Start your journey to learning about investing on the Pakistan Stock Exchange (PSX)."
-slug: "/intro"
+description: 'Start your journey to learning about investing on the Pakistan Stock Exchange (PSX).'
+slug: '/intro'
 ---
 
 # Welcome
 
 Three numbers worth sitting with for a moment. Over the past year, the [KSE-100](https://tradingeconomics.com/pakistan/stock-market), the main index of the Pakistan Stock Exchange, returned more than 50 percent. Pakistani [inflation](https://www.brecorder.com/news/40419167) over the same period ran at around 11 percent. A typical bank savings account paid single-digit returns.
 
-In plain language, money sitting in a savings account has been losing real value every month, while the same money sitting in a basket of PSX-listed companies has been multiplying. Most Pakistanis have never seriously considered the stock market because they assume it is gambling, or that you need lacs of rupees to start, or that you need to be a finance professional to make sense of it. None of that is true.
-
-This guide is the on-ramp. Open an account at a registered PSX broker for [around Rs. 5,000](https://www.psx.com.pk/psx/resources-and-tools/investors/open-an-account-invest), learn the rules from this material over a few weeks, start small, and stay patient. Everything beyond that is mechanics, and that is exactly what every page from here on teaches.
+Money sitting in a savings account has been losing real value every month, while the same money sitting in a basket of PSX-listed companies has been multiplying. Most Pakistanis have never seriously considered the stock market because they assume it is gambling, or that you need lacs of rupees to start, or that you need to be a finance professional to make sense of it. None of that is true.
 
 ## Start here
 
